@@ -9,10 +9,10 @@
     $koneksi = mysqli_connect($server, $user, $password, $database)or die(mysqli_error($koneksi));
 
     //Data akan disimpan Baru
-    if(isset($_POST['esimpan']))
+    if(isset($_POST['isimpan']))
     {
         $simpan = mysqli_query($koneksi, "INSERT INTO Keluarga (NoKK, KepalaKeluarga, Dasawisma, Lingkungan, Kelurahan, Kecamatan)
-                                                                        VALUES ('$_POST[knokk]', 
+                                                                        VALUES ('$_POST[kNoKK]', 
                                                                                 '$_POST[kkepalakeluarga]', 
                                                                                 '$_POST[kdasawisma]', 
                                                                                 '$_POST[klingkungan]',
@@ -55,10 +55,11 @@
         <h1 class="text-center">DASAWISMA INDONESIA</h1>
         <div class="data-form">
                 <form method="post" action="#">
-                    <h6 style="text-align:center">TAMBAH DATA KELUARGA</h6>
+                    <h6 style="text-align:center"><b>TAMBAH DATA KELUARGA</b></h6>
+                    <hr color="black">
                     <div class="form-group">
                         <label>No. KK</label>
-                        <input type="number" name="knokk" class="form-control" required>
+                        <input type="number" name="kNoKK" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Kepala keluarga</label>
@@ -67,6 +68,7 @@
                     <div class="form-group">
                         <label>Dasawisma</label>
                         <input type="text" name="kdasawisma" class="form-control" placeholder="Masukkan Nama Dasawisma" required>
+                    </div>
                     <div class="form-group">
                         <label>Lingkungan</label>
                         <input type="text" name="klingkungan" class="form-control" required>
@@ -79,9 +81,15 @@
                         <label>Kecamatan</label>
                         <input type="text" name="kkecamatan" class="form-control" required>
                     </div>
-                    <div class="mt-3"></div>
-                    <button type="button" class="btn btn-dark" onclick="history.back();">Batal</button>
-                    <button type="submit" class="btn btn-success" name="esimpan">Simpan</button>
+                    <div class="d-flex">
+                        <div class="mt-3"></div>
+                        <div class="mr-auto p-0">
+                            <button type="button" class="btn btn-dark center-block" onclick="history.back();">Batal</button>
+                        </div>
+                        <div class="ml-auto p-0">
+                            <button type="submit" class="btn btn-success center-block" name="isimpan">Simpan</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

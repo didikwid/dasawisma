@@ -9,7 +9,7 @@
     $koneksi = mysqli_connect($server, $user, $password, $database)or die(mysqli_error($koneksi));
 
     //Data akan disimpan Baru
-    if(isset($_POST['usimpan']))
+    if(isset($_POST['isimpan']))
     {
         $simpan = mysqli_query($koneksi, "INSERT INTO Perkarangan (KepalaKeluarga, Kategori, Komoditi, Jumlah, Dasawisma, Kendala)
                                                                         VALUES ('$_POST[pkepalakeluarga]', 
@@ -55,7 +55,8 @@
         <h1 class="text-center">DASAWISMA INDONESIA</h1>
         <div class="data-form">
                 <form method="post" action="#">
-                    <h6 style="text-align:center">TAMBAH DATA PEMANFAATAN PERKARANGAN</h6>
+                    <h6 style="text-align:center"><b>TAMBAH DATA PEMANFAATAN PERKARANGAN<b></h6>
+                    <hr color="black">
                     <div class="form-group">
                         <label>Kepala Keluarga</label>
                         <input type="text" name="pkepalakeluarga" class="form-control" required>
@@ -75,13 +76,20 @@
                     <div class="form-group">
                         <label>Dasawisma</label>
                         <input type="text" name="pdasawisma" class="form-control" placeholder="Nama Dasawisma" required>
+                    </div>
                     <div class="form-group">
                         <label>Kendala</label>
                         <input type="text" name="pkendala" class="form-control" required>
                     </div>
-                    <div class="mt-3"></div>
-                    <button type="button" class="btn btn-dark" onclick="history.back();">Batal</button>
-                    <button type="submit" class="btn btn-success" name="usimpan">Simpan</button>
+                    <div class="d-flex">
+                        <div class="mt-3"></div>
+                        <div class="mr-auto p-0">
+                            <button type="button" class="btn btn-dark center-block" onclick="history.back();">Batal</button>
+                        </div>
+                        <div class="ml-auto p-0">
+                            <button type="submit" class="btn btn-success center-block" name="isimpan">Simpan</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
