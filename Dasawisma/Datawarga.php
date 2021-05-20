@@ -18,6 +18,7 @@ $koneksi = mysqli_connect($server, $user, $password, $database) or die(mysqli_er
 
 <body>
     <div class="container">
+    <a href="TambahWarga.php" class="btn btn-info fw-bold text-white">Tambah Data</a>
 
         <!-- Awal Card Tabel -->
         <div class="card mt-3" style="background-color: rgba(231, 116, 185, 0.6);">
@@ -54,20 +55,20 @@ $koneksi = mysqli_connect($server, $user, $password, $database) or die(mysqli_er
                     ?>
                         <tr>
                             <td><?= $no++; ?></td>
-                            <td><?= $data['nokk'] ?></td>
-                            <td><?= $data['kepalakeluarga'] ?></td>
-                            <td><?= $data['dasawisma'] ?></td>
-                            <td><?= $data['lingkungan'] ?></td>
-                            <td><?= $data['kelurahan'] ?></td>
-                            <td><?= $data['kecamatan'] ?></td>
+                            <td><?= $data['NoKK'] ?></td>
+                            <td><?= $data['KepalaKeluarga'] ?></td>
+                            <td><?= $data['Dasawisma'] ?></td>
+                            <td><?= $data['Lingkungan'] ?></td>
+                            <td><?= $data['Kelurahan'] ?></td>
+                            <td><?= $data['Kecamatan'] ?></td>
                             <td>
                                 <a href="editwarga.php?hal=edit&id=<?= $data['idwarga'] ?>" class="btn btn-warning"> Edit </a>
                                 <a href="hapuswarga.php?hal=hapus&id=<?= $data['idwarga'] ?>" onclick="return confirm('Apakah yakin ingin menghapus data ini?')" class="btn btn-danger"> Hapus </a>
                             </td>
                         </tr>
-                    <?php } //penutup perulangan while 
-                    ?>
+                    <?php } //penutup perulangan while ?>
                 </table>
+                <a href="homekdasawisma.php" class="btn btn-info"> Kembali </a>
 
             </div>
         </div>

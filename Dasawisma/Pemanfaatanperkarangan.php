@@ -18,6 +18,7 @@ $koneksi = mysqli_connect($server, $user, $password, $database) or die(mysqli_er
 
 <body>
     <div class="container">
+    <a href="TambahPerkarangan.php" class="btn btn-info fw-bold text-white">Tambah Data</a>
 
         <!-- Awal Card Tabel -->
         <div class="card mt-3" style="background-color: rgba(231, 116, 185, 0.6);">
@@ -70,6 +71,7 @@ $koneksi = mysqli_connect($server, $user, $password, $database) or die(mysqli_er
                     <?php } //penutup perulangan while 
                     ?>
                 </table>
+                <a href="homekdasawisma.php" class="btn btn-info"> Kembali </a>
 
             </div>
         </div>
