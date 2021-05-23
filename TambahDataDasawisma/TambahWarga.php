@@ -23,14 +23,14 @@
         {
             echo "<script>
                         alert('Data Berhasil di Simpan!');
-                        document.location='TambahWarga.php';
+                        document.location='Datawarga.php';
                 </script>";
         }
         else //jika gagal disimpan
         {
             echo "<script>
                         alert('Data Gagal di Simpan!!');
-                        document.location='TambahWarga.php';
+                        document.location='Datawarga.php';
                 </script>";
         }
     }
