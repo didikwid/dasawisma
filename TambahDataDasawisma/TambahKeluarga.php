@@ -23,14 +23,14 @@
         {
             echo "<script>
                         alert('Data Berhasil di Simpan!');
-                        document.location='TambahKeluarga.php';
+                        document.location='Datakeluarga.php';
                 </script>";
         }
         else //jika gagal disimpan
         {
             echo "<script>
                         alert('Data Gagal di Simpan!!');
-                        document.location='TambahKeluarga.php';
+                        document.location='Datakeluarga.php';
                 </script>";
         }
     }

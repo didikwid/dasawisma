@@ -23,14 +23,14 @@
         {
             echo "<script>
                         alert('Data Berhasil di Simpan!');
-                        document.location='TambahPerkarangan.php';
+                        document.location='Dataperkarangan.php';
                 </script>";
         }
         else //jika gagal disimpan
         {
             echo "<script>
                         alert('Data Gagal di Simpan!!');
-                        document.location='TambahPerkarangan.php';
+                        document.location='Dataperkarangan.php';
                 </script>";
         }
     }
