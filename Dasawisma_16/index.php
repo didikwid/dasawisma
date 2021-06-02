@@ -15,15 +15,8 @@ $koneksi = mysqli_connect($server, $user, $password, $database) or die(mysqli_er
     <div class="img" align="center">
     <img src="logo.jpg" width="100" align="center">
 
-    <title>DASA WISMA INDONESIA</title>
-
-    <title>Login Sebagai :</title>
-      </div>
-    <nav>
-      <ul>
-      
-          </ul>
-    </nav>
+    <title>Dasawisma</title>
+   
     <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -31,6 +24,15 @@ $koneksi = mysqli_connect($server, $user, $password, $database) or die(mysqli_er
 
 body{
     background-image: linear-gradient(-90deg, #d884b8, #e894c4);
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
 }
 
 .contact-form{
@@ -58,6 +60,7 @@ body{
   padding: 12px 18px;
   border-radius: 8px;
 }
+
 .txtb label{
   display: block;
   text-align: left;
@@ -75,33 +78,36 @@ body{
 }
 .btn{
   display: inline-block;
-  background: #FF28EA;
+  background: rgba(231, 116, 185, 0.6);
   padding: 14px 0;
   color: black;
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 8px;
   width: 100%;
+  border-radius: 50px;
+  text-decoration: none;
 }
   </style>
   </head>
   <body class="bg">
     <div class="container">
+    <h4>DASAWISMA INDONESIA</h4>
     <nav >
       <ul>
     </nav>
   </div>
   <form>
   <div class="contact-form">
-    <h1>DASA WISMA INDONESIA</h1>
-     <h1>Login Sebagai :</h1>
-    <div class="txtb">
-    <a href = "ketuapkk.php" class="btn" type="login">Ketua PKK</a>
-    <a href = "ketuadasawisma.php" class="btn" type="login">Ketua Dasawisma</a>
-    <a href = "adasawisma.php" class="btn" type="login">Anggota Dasawisma</a> 
-
-    </div>
-  
+     <h4>Login Sebagai :</h4>
+     <hr>
+     <div class="txtb">
+        <a href = "loginpkk.php" class="btn" type="login">Ketua PKK</a>
+        <a href = "loginketua.php" class="btn" type="login">Ketua Dasawisma</a>
+        <a href = "loginanggota.php" class="btn" type="login">Anggota Dasawisma</a> 
+     </div>
+     <hr>
+     
   </div>
   </form>
   </body>

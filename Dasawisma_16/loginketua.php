@@ -1,6 +1,5 @@
 
-<!DOCTYPE html>
-<<?php
+<?php
 //Memanggil Koneksi Database
 $server = "localhost";
 $user = "root";
@@ -13,7 +12,7 @@ if(isset($_POST['ilogin'])){
     $NIK = $_POST['tnik'];
     $Password = $_POST['tpassword'];
     
-    $login = mysqli_query($koneksi, "select * from kdasawisma where NIK='$NIK'");
+    $login = mysqli_query($koneksi, "select * from ketuadasawisma where NIK='$NIK'");
     $cek = mysqli_num_rows($login);
 
     if($cek === 1)
@@ -26,15 +25,17 @@ if(isset($_POST['ilogin'])){
         }
         else{
             echo "<script>alert('Login Berhasil');
-                document.location='homekdasawisma.php'</script>";
+                document.location='HomeketuaU.php'</script>";
         }
     }else
     {
-        echo"<script>alert('Username salah atau belum terdaftar');</script>";
+        echo"<script>alert('NIK dan Password Anda salah!!');</script>";
     }
 }
 
-?>html>
+?>
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,8 +66,7 @@ if(isset($_POST['ilogin'])){
                     </div><br>
                     <hr color="black">
                     <center>
-                      <a class="link" href="">Forgot Password</a><br>
-                      <a class="link" href="">Don't have an account? Register Now!</a>
+                      <a class="link" href="Forgotpassword.html">Forgot Password</a><br>
 		                </center>
                     
                 </form>

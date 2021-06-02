@@ -22,10 +22,10 @@ if (isset($_POST['ilogin'])) {
             echo "<script>alert('Password salah');</script>";
         } else {
             echo "<script>alert('Login Berhasil');
-                document.location='homeadasawisma.php'</script>";
+                document.location='HomeanggotaU.php'</script>";
         }
     } else {
-        echo "<script>alert('Username salah atau belum terdaftar');</script>";
+        echo "<script>alert('NIK dan Password Anda salah atau belum terdaftar!!');</script>";
     }
 }
 
@@ -64,13 +64,10 @@ if (isset($_POST['ilogin'])) {
             </div><br>
             <hr color="black">
             <center>
-                <a class="link" href="#">Forgot Password?</a><br>
-                <a class="link" href="daftar.php">Don't have an account? Register Now!</a>
+                <a class="link" href="Forgotpassword.html">Forgot Password?</a><br>
+                <a class="link" href="daftaranggota.php">Don't have an account? Register Now!</a>
             </center>
-
         </form>
-    </div>
-    </div>
     </div>
 </body>
 

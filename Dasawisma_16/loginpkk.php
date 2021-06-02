@@ -24,17 +24,15 @@ if(isset($_POST['ilogin'])){
         }
         else{
             echo "<script>alert('Login Berhasil');
-                document.location='homeketuapkk.php'</script>";
+                document.location='HomepkkU.php'</script>";
         }
     }else
     {
-        echo"<script>alert('Username salah atau belum terdaftar');</script>";
+        echo"<script>alert('NIK dan Pssword Anda Salah!!');</script>";
     }
 }
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html>
@@ -68,8 +66,7 @@ if(isset($_POST['ilogin'])){
                     </div><br>
                     <hr color="black">
                     <center>
-                      <a class="link" href="">Forgot Password</a><br>
-                      <a class="link" href="">Don't have an account? Register Now! </a>
+                      <a class="link" href="Forgotpassword.html">Forgot Password</a><br>
 		                </center>
                 </form>
             </div>
