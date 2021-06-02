@@ -11,26 +11,26 @@
     //Data akan disimpan Baru
     if(isset($_POST['isimpan']))
     {
-        $simpan = mysqli_query($koneksi, "INSERT INTO Perkarangan (KepalaKeluarga, Kategori, Komoditi, Jumlah, Dasawisma, Kendala)
-                                                                        VALUES ('$_POST[pkepalakeluarga]', 
-                                                                                '$_POST[pkategori]', 
-                                                                                '$_POST[pkomoditi]', 
-                                                                                '$_POST[pjumlah]',
-                                                                                '$_POST[pdasawisma]',
-                                                                                '$_POST[pkendala]')
+        $simpan = mysqli_query($koneksi, "INSERT INTO Warga (NoKK, KepalaKeluarga, Dasawisma, Lingkungan, Kelurahan, Kecamatan)
+                                                                        VALUES ('$_POST[wnokk]', 
+                                                                                '$_POST[wkepalakeluarga]', 
+                                                                                '$_POST[wdasawisma]', 
+                                                                                '$_POST[wlingkungan]',
+                                                                                '$_POST[wkelurahan]',
+                                                                                '$_POST[wkecamatan]')
                                                                     ");
         if($simpan) //jika berhasil disimpan
         {
             echo "<script>
                         alert('Data Berhasil di Simpan!');
-                        document.location='Dataperkarangan.php';
+                        document.location='Datawargaketua.php';
                 </script>";
         }
         else //jika gagal disimpan
         {
             echo "<script>
                         alert('Data Gagal di Simpan!!');
-                        document.location='Dataperkarangan.php';
+                        document.location='Datawargaketua.php';
                 </script>";
         }
     }
@@ -43,7 +43,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Data Pemanfaatan Perkarangan</title>
+    <title>Tambah Data Warga</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -55,31 +55,31 @@
         <h1 class="text-center">DASAWISMA INDONESIA</h1>
         <div class="data-form">
                 <form method="post" action="#">
-                    <h6 style="text-align:center"><b>TAMBAH DATA PEMANFAATAN PERKARANGAN<b></h6>
+                    <h6 style="text-align:center"><b>TAMBAH DATA WARGA</b></h6>
                     <hr color="black">
                     <div class="form-group">
-                        <label>Kepala Keluarga</label>
-                        <input type="text" name="pkepalakeluarga" class="form-control" required>
+                        <label>No. KK</label>
+                        <input type="number" name="wnokk" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label>Kategori</label>
-                        <input type="text" name="pkategori" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Komoditi</label>
-                        <input type="text" name="pkomoditi" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Jumlah</label>
-                        <input type="number" name="pjumlah" class="form-control" required>
+                        <label>Kepala keluarga</label>
+                        <input type="text" name="wkepalakeluarga" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Dasawisma</label>
-                        <input type="text" name="pdasawisma" class="form-control" placeholder="Nama Dasawisma" required>
+                        <input type="text" name="wdasawisma" class="form-control" placeholder="Nama Dasawisma" required>
                     </div>
                     <div class="form-group">
-                        <label>Kendala</label>
-                        <input type="text" name="pkendala" class="form-control" required>
+                        <label>Lingkungan</label>
+                        <input type="text" name="wlingkungan" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Kelurahan</label>
+                        <input type="text" name="wkelurahan" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Kecamatan</label>
+                        <input type="text" name="wkecamatan" class="form-control" required>
                     </div>
                     <div class="d-flex">
                         <div class="mt-3"></div>

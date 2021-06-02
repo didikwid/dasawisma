@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Home Dasawisma</title>
+		<link rel="stylesheet" href="css/Home.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+	</head>
+	<body>
+
+		<!--wrapper start-->
+		<div class="wrapper">
+			<!--header menu start-->
+			<div class="header">
+				<div class="header-menu">
+					<div class="title"><h6>Dasawisma Indonesia</h6></span></div>
+					<div class="sidebar-btn">
+						<i class="fas fa-bars"></i>
+					</div>
+				</div>
+			</div>
+			<!--header menu end-->
+
+			<!--sidebar start-->
+			<div class="sidebar">
+				<div class="sidebar-menu">
+					<li class="item">
+						<a href="HomepkkU.php" class="menu-btn">
+							<i class="fas fa-home"></i><span>Beranda</span>
+						</a>
+					</li>
+					<li class="item">
+						<a href="Datawargapkk.php" class="menu-btn">
+							<i class="fas fa-file"></i><span>Data Warga</span>
+						</a>
+					</li>
+                    <li class="item">
+						<a href="Datapelatihanpkk.php" class="menu-btn">
+							<i class="fas fa-file"></i><span>Pelatihan</span>
+						</a>
+					</li>
+					
+					<li class="item" id="settings">
+						<a href="#settings" class="menu-btn">
+							<i class="fas fa-file"></i><span>Catatan Keluarga <i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<div class="sub-menu">
+							<a href="Datakeluargapkk.php">
+								<i class="fas fa-file"></i><span>Data Keluarga</span>
+							</a>
+							<a href="Dataperkaranganpkk.php">
+								<i class="fas fa-file"></i><span>Pemanfaatan Perkarangan</span>
+							</a>
+                            <a href="pengumumanpkk.html">
+								<i class="fas fa-file"></i><span>Industri Rumah Tangga</span>
+							</a>
+						</div>
+					</li>
+					<li class="item">
+						<a href="Bantuanpkk.html" class="menu-btn active">
+							<i class="fas fa-info-circle"></i><span>Bantuan</span>
+						</a>
+					</li>
+
+					<li class="item">
+						<a href="index.php" class="menu-btn">
+							<i class="fas fa-arrow-left"></i><span>Keluar</span>
+						</a>
+					</li>
+				</div>
+			</div>
+
+			<!--sidebar end-->
+
+			<!--main container start-->
+			<div class="main-container">
+				<div class="data-form">
+                    <form method="post" action="#">
+                        <hr color="black">
+                        <div class="form-group">
+                        <br>
+                            <h6 style="text-align: center">Jika Anda butuh bantuan kami, silahkan hubungi :</h6>
+                            <h6 style="text-align: center"><br><b> No. 082210856196</b> atau <b>Email : dasawisma.id@gmail.com</b></h6>
+                        <br>
+                        </div>
+                        <hr color="black">
+                    </form>
+                </div>
+			</div>
+			<!--main container end-->
+		</div>
+		<!--wrapper end-->
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$(".sidebar-btn").click(function(){
+				$(".wrapper").toggleClass("collapse");
+			});
+		});
+		</script>
+
+	</body>
+</html>
