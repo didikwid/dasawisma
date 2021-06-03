@@ -86,7 +86,7 @@ $koneksi = mysqli_connect($server, $user, $password, $database) or die(mysqli_er
 			<div class="main-container">
                 <div class="card mt-3" style="background-color: rgba(231, 116, 185, 0.6);">
                     <div class="card-header text-black text-center">
-                        <b>Data Warga</b>
+                        <h6><b>Data Warga</b></h6>
                     </div>
                     <div class="card-body">
 
