@@ -51,7 +51,7 @@
 </head>
 <body>
 <br/><br/>
-    <img class="tengah" src="logo.jpg"/><br/>
+    <img class="tengah" src="img/logo.jpg"/><br/>
         <h1 class="text-center">DASAWISMA INDONESIA</h1>
         <div class="data-form">
                 <form method="post" action="#">
