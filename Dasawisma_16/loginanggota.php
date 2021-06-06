@@ -46,7 +46,7 @@ if (isset($_POST['ilogin'])) {
 
 <body>
     <br /><br />
-    <img class="tengah" src="logo.jpg" /><br />
+    <img class="tengah" src="img/logo.jpg" /><br />
     <div class="data-form">
         <form method="post" action="#">
             <h6 style="text-align:center"><b>DASAWISMA INDONESIA</b></h6>
