@@ -87,7 +87,7 @@ $koneksi = mysqli_connect($server, $user, $password, $database) or die(mysqli_er
                 <!-- Awal Card Tabel -->
                 <div class="card mt-3" style="background-color: rgba(231, 116, 185, 0.6);">
                     <div class="card-header text-black text-center">
-                        <b>Data Pelatihan</b>
+                        <h6><b>Data Pelatihan</b></h6>
                     </div>
                     
                     <div class="card-body">
@@ -134,7 +134,7 @@ $koneksi = mysqli_connect($server, $user, $password, $database) or die(mysqli_er
                             <?php } //penutup perulangan while 
                             ?>
                         </table>
-                        <a href="TambahWarga.php" class="btn btn-info fw-bold text-white mt-2" style="width: 140px; margin:5px;">Tambah Data</a>
+                        <a href="TambahPelatihan.php" class="btn btn-info fw-bold text-white mt-2" style="width: 140px; margin:5px;">Tambah Data</a>
                     </div>
                 </div>
                 <!-- Akhir Card Tabel -->

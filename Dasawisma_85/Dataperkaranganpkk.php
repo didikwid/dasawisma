@@ -96,7 +96,7 @@ $koneksi = mysqli_connect($server, $user, $password, $database) or die(mysqli_er
 			<!-- Awal Card Tabel -->
 			<div class="card mt-3" style="background-color: rgba(231, 116, 185, 0.6);">
 				<div class="card-header text-black text-center">
-					<b>Data Pemanfaatan Pekarangan</b>
+					<h6><b>Data Pemanfaatan Pekarangan</b></h6>
 				</div>
 				<div class="card-body">
 
